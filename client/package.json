@@ -2,12 +2,15 @@
   "name": "resource-frontend",
   "version": "1.0.0",
   "description": "Frontend for Community-Driven Resource Sharing Platform",
-  "author": "Your Name",
+  "author": "Tusarkanti",
   "license": "MIT",
+  "homepage": "https://Tusarkanti.github.io/Community-Driven-Resource-Sharing-Platform",
   "scripts": {
     "dev": "vite",
     "build": "vite build",
-    "preview": "vite preview"
+    "preview": "vite preview",
+    "predeploy": "npm run build",
+    "deploy": "gh-pages -d dist"
   },
   "dependencies": {
     "axios": "^1.6.8",
@@ -17,10 +20,12 @@
     "react-router-dom": "^6.22.3"
   },
   "devDependencies": {
+    "@tailwindcss/postcss": "^4.1.11",
     "@vitejs/plugin-react": "^4.2.1",
-    "autoprefixer": "^10.4.19",
-    "postcss": "^8.4.38",
-    "tailwindcss": "^3.4.3",
+    "autoprefixer": "^10.4.21",
+    "gh-pages": "^6.3.0",
+    "postcss": "^8.5.6",
+    "tailwindcss": "^4.1.11",
     "vite": "^5.2.0"
   }
 }
